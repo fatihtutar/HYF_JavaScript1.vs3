@@ -87,6 +87,7 @@ console.assert(return_val === 'turtle', "2: return_val === " + return_val);
   console.assert(return_val === 'turtle', "2: return_val === " + return_val);
 };
 ```
+SOLUTION
 ```js
 function turtle(_1, _2) {  
     var result = "";
@@ -112,7 +113,15 @@ function turtle(_1, _2) {
   console.assert(return_val === 'turtle', "3: return_val === " + return_val);
 };
 ```
-
+SOLUTION
+```js
+function turtle(_1, _2) {  
+    var result = "t" + _1 + "r" + _2;
+    return result;
+  }
+  const return_val = turtle('u','tle'/* write some arguments */);
+  console.assert(return_val === 'turtle', "3: return_val === " + return_val);
+```
 ### 4
 
 [on pytut](http://www.pythontutor.com/javascript.html#code=function%20turtle%28_1%2C%20_2%2C%20_3%29%20%7B%0A%20%20var%20result%20%3D%20%22t%22%20%2B%20_2%20%2B%20%22r%22%20%2B%20_1%20%2B%20_3%3B%0A%20%20return%20result%3B%0A%7D%0Aconst%20return_val_1%20%3D%20turtle%28%2F*%20write%20some%20arguments%20*%2F%29%3B%0Aconsole.assert%28return_val_1%20%3D%3D%3D%20\'turtle\'%2C%20%225%3A%20return_val_1%20%3D%3D%3D%20%22%20%2B%20return_val_1%29%3B%0A%0Aconst%20return_val_2%20%3D%20turtle%28%2F*%20write%20some%20arguments%20*%2F%29%3B%0Aconsole.assert%28return_val_2%20%3D%3D%3D%20\'turtle\'%2C%20%225%3A%20return_val_2%20%3D%3D%3D%20%22%20%2B%20return_val_2%29%3B&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
@@ -126,6 +135,20 @@ function turtle(_1, _2) {
   console.assert(return_val_1 === 'turtle', "5: return_val_1 === " + return_val_1);
 
   const return_val_2 = turtle(/* write some arguments */);
+  console.assert(return_val_2 === 'turtle', "4: return_val_2 === " + return_val_2);
+};
+```
+SOLUTION
+```js
+{  // 4
+  function turtle(_1, _2, _3) {  
+    var result = "t" + _2 + "r" + _1 + _3;
+    return result;
+  }
+  const return_val_1 = turtle('tl','u','e'/* write some arguments */);
+  console.assert(return_val_1 === 'turtle', "5: return_val_1 === " + return_val_1);
+
+  const return_val_2 = turtle('t','u','le'/* write some arguments */);
   console.assert(return_val_2 === 'turtle', "4: return_val_2 === " + return_val_2);
 };
 ```
@@ -158,6 +181,30 @@ function turtle(_1, _2) {
   console.assert(return_val_6 === 'turtle', "5: return_val_6 === " + return_val_6);
 };
 ```
+SOLUTION
+```js
+function turtle(_1, _2, _3) {  
+    var result = _1 + _2 + _3;
+    return result;
+  }
+  const return_val_1 = turtle('tur','tl','e'/* write some arguments */);
+  console.assert(return_val_1 === 'turtle', "5: return_val_1 === " + return_val_1);
+
+  const return_val_2 = turtle('tu','rtl','e'/* write some arguments */);
+  console.assert(return_val_2 === 'turtle', "5: return_val_2 === " + return_val_2);
+
+  const return_val_3 = turtle('t','urtl','e'/* write some arguments */);
+  console.assert(return_val_3 === 'turtle', "5: return_val_3 === " + return_val_3);
+
+  const return_val_4 = turtle('t','urt','le'/* write some arguments */);
+  console.assert(return_val_4 === 'turtle', "5: return_val_4 === " + return_val_4);
+
+  const return_val_5 = turtle('t','ur','tle'/* write some arguments */);
+  console.assert(return_val_5 === 'turtle', "5: return_val_5 === " + return_val_5);
+
+  const return_val_6 = turtle('t','u','rtle'/* write some arguments */);
+  console.assert(return_val_6 === 'turtle', "5: return_val_6 === " + return_val_6);
+  ```
 
 ### 6
 
@@ -172,6 +219,15 @@ function turtle(_1, _2) {
   console.assert(return_val === 'turtle', "6: return_val === " + return_val);
 };
 ```
+SOLUTION
+```js
+  function turtle(_1, _2, _3, _4, _5) {  
+    var result = _4 + _2 + _5 + _4 + _1 + _3;
+    return result;
+  }
+  const return_val = turtle('l','u','e','t','r'/* write some arguments */);
+  console.assert(return_val === 'turtle', "6: return_val === " + return_val);
+  ```
 
 ### 7
 
@@ -186,6 +242,15 @@ function turtle(_1, _2) {
   console.assert(return_val === 'turtle', "7: return_val === " + return_val);
 };
 ```
+SOLUTION
+```js
+function turtle(_1, _2, _3, _4, _5) {  
+    var result = _2 + _1 + _4 + _2 + "l" + _3;
+    return result;
+  }
+  const return_val = turtle('u','t','e','r'/* write some arguments */);
+  console.assert(return_val === 'turtle', "7: return_val === " + return_val);
+  ```
 
 ### 8 
 
@@ -202,6 +267,17 @@ function turtle(_1, _2) {
   console.assert(return_val === 'turtle', "8: return_val === " + return_val);
 };
 ```
+SOLUTION
+```js
+function turtle(_1, _2, _3, _4, _5) {  
+    _4 = _2;
+    _1 = _3;
+    var result = _4 + "u" + _1 + _2 + _5 + "e";
+    return result;
+  }
+  const return_val = turtle('','t','r','','l'/* write some arguments */);
+  console.assert(return_val === 'turtle', "8: return_val === " + return_val);
+  ```
 
 ### 9
 
@@ -219,6 +295,19 @@ function turtle(_1, _2) {
   const return_val = turtle(/* write some arguments */);
   console.assert(return_val === 'turtle', "9: return_val === " + return_val);
 };
+SOLUTION
+```js
+function turtle(_1, _2, _3, _4, _5) {  
+    var _ = _4;
+    _4 = _2;
+    _1 = _3;
+    _3 = _;
+    var result = _4 + "u" + _1 + _4 + _3 + "e";
+    return result;
+  }
+  const return_val = turtle('','t','r','l'/* write some arguments */);
+  console.assert(return_val === 'turtle', "9: return_val === " + return_val);
+  ```
 ```
 
 ___
