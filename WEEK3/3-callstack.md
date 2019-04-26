@@ -96,6 +96,21 @@ It sounds complicated at first, but after some practice you'll find it's not so 
   console.assert(return_val === 'tour', "wu-1: return_val === " + return_val);
 };
 ```
+SOLUTION
+```js
+function a_word(_1, _2, _3, _4) { 
+  
+  function tour(_a, _b, _c, _d) {
+    return _b + _a + _c + _d;
+  }
+  var word = tour(_1,_2,_3,_4/* fill this in */);
+
+  var result = word;
+  return result;
+}
+const return_val = a_word("o", "t", "u", "r");
+console.assert(return_val === 'tour', "wu-1: return_val === " + return_val);
+```
 
 ### Tour 2
 
@@ -116,6 +131,21 @@ It sounds complicated at first, but after some practice you'll find it's not so 
   console.assert(return_val === 'tour', "wu-2: return_val === " + return_val);
 };
 ```
+SOLUTION
+```js
+function a_word(_1, _2, _3, _4) { 
+    
+    function tour(_a, _b, _c, _d) {
+      return _c + _a + _d + _b;
+    }
+    var word = tour(_4,_3,_2,_1/* fill this in */);
+
+    var result = word;
+    return result;
+  }
+  const return_val = a_word("u","t","r","o" /* fill this in */);
+  console.assert(return_val === 'tour', "wu-2: return_val === " + return_val);
+  ```
 
 [TOP](#sentences)
 
@@ -152,6 +182,31 @@ It sounds complicated at first, but after some practice you'll find it's not so 
   console.assert(return_val === 'eat ate tea', "1: return_val === " + return_val);
 };
 ```
+SOLUTION
+```js
+function sentence(_1, _2, _3) { 
+    
+    function eat(_x, _y, _z) {
+      return _x + _y + _z;
+    }
+    var word_1 = eat(_2,_1,_3/* fill this in */);
+
+    function ate(_x, _y, _z) {
+      return _x + _y + _z;
+    }
+    var word_2 = ate(_1, _3, _2);
+
+    function tea(_x, _y, _z) {
+      return _x + _y + _3;
+    }
+    var word_3 = tea(_2,_1,""/* fill this in */);
+
+    var result = word_1 + " " + word_2 + " " + word_3;
+    return result;
+  }
+  const return_val = sentence("a", "e", "t");
+  console.assert(return_val === 'eat ate tea', "1: return_val === " + return_val);
+  ```
 
 ### 2 
 
