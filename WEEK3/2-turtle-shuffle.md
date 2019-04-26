@@ -59,6 +59,17 @@ some trickier function exercises before moving on.
   console.assert(return_val === 'turtle', "1: return_val === " + return_val);
 };
 ```
+SOLUTION
+```js
+function turtle(_1, _2, _3) {
+  var result = "";
+  var the_start = "tur";
+  result = the_start + _1 + _2 + _3;
+  return result;
+}
+const return_val = turtle('t','l','e'/* write some arguments */);
+console.assert(return_val === 'turtle', "2: return_val === " + return_val);
+```
 
 ### 2
 
@@ -75,6 +86,17 @@ some trickier function exercises before moving on.
   const return_val = turtle(/* write some arguments */);
   console.assert(return_val === 'turtle', "2: return_val === " + return_val);
 };
+```
+```js
+function turtle(_1, _2) {  
+    var result = "";
+    var the_start = "tu";
+    var the_end = "le";
+    result = the_start + _1 + _2 + the_end;
+    return result;
+  }
+  const return_val = turtle('r','t'/* write some arguments */);
+  console.assert(return_val === 'turtle', "2: return_val === " + return_val);
 ```
 
 ### 3
