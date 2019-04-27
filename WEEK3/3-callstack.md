@@ -237,8 +237,30 @@ function sentence(_1, _2, _3) {
   console.assert(return_val === 'eat ate tea', "2: return_val === " + return_val);
 };
 ```
+SOLUION
 ```js
+function sentence(_1, _2, _3) { 
+  
+  function eat(_x, _y, _z) {
+    return _z + _y + _x;
+  }
+  var word_1 = eat(_3,_1,_2/* fill this in */);
 
+  function ate(_x, _y, _z) {
+    return _y + _x + _z;
+  }
+  var word_2 = ate(_3,_1,_2/* fill this in */);
+
+  function tea(_x, _y, _z) {
+    return _x + _z + _y;
+  }
+  var word_3 = tea(_3,_1,_2/* fill this in */);
+
+  var result = word_1 + " " + word_2 + " " + word_3;
+  return result;
+}
+const return_val = sentence("a", "e", "t");
+console.assert(return_val === 'eat ate tea', "2: return_val === " + return_val);
 ```
 
 ### 3
@@ -265,6 +287,26 @@ function sentence(_1, _2, _3) {
   console.assert(return_val === 'space capes', "3: return_val === " + return_val);
 };
 ```
+SOLUTION
+```js
+function sentence(_1, _2, _3, _4, _5) { 
+
+    function space(_v, _w, _x, _y, _z) {
+      return _v + _w + _x + _y + _z;
+    }
+    var word_1 = space(_1, _2, _3, _4, _5/* fill this in */);
+
+    function capes(_v, _w, _x, _y, _z) {
+      return _v + _w + _x + _y + _z;
+    }
+    var word_2 = capes(_4, _3, _2, _5, _1);
+
+    var result = word_1 + " " + word_2;
+    return result;
+  }
+  const return_val = sentence("s","p","a","c","e"/* fill this in */);
+  console.assert(return_val === 'space capes', "3: return_val === " + return_val);
+  ```
 
 ### 4
 
@@ -290,6 +332,26 @@ function sentence(_1, _2, _3) {
   console.assert(return_val === 'space capes', "4: return_val === " + return_val);
 };
 ```
+SOLUTION
+```js
+function sentence(_1, _2, _3, _4, _5) { 
+
+    function space(_v, _w, _x, _y, _z) {
+      return _v + _w + _x + _y + _z;
+    }
+    var word_1 = space(_3, _4, _1, _5, _2);
+
+    function capes(_v, _w, _x, _y, _z) {
+      return _v + _w + _x + _y + _z;
+    }
+    var word_2 = capes(_5, _1, _4, _2, _3/* fill this in */);
+
+    var result = word_1 + " " + word_2;
+    return result;
+  }
+  const return_val = sentence("a","e","s","p","c"/* fill this in */);
+  console.assert(return_val === 'space capes', "4: return_val === " + return_val);
+  ```
 
 ### 5
 
