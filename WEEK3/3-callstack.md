@@ -237,6 +237,9 @@ function sentence(_1, _2, _3) {
   console.assert(return_val === 'eat ate tea', "2: return_val === " + return_val);
 };
 ```
+```js
+
+```
 
 ### 3
 
