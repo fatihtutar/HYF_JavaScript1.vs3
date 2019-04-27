@@ -377,6 +377,26 @@ function sentence(_1, _2, _3, _4, _5) {
   console.assert(return_val === 'cruel ulcer', "5: return_val === " + return_val);
 };
 ```
+SOLUTION
+```js
+function sentence(_1, _2, _3, _4, _5) { 
+
+    function cruel(_v, _w, _x, _y, _z) {
+      return _v + _w + _x + _y + _z;
+    }
+    var word_1 = cruel(_3, _1, _4, _5, _2);
+
+    function ulcer(_v, _w, _x, _y, _z) {
+      return _v + _w + _x + _y + _z;
+    }
+    var word_2 = ulcer(_4,_2,_3,_5,_1/* fill this in */);
+
+    var result = word_1 + " " + word_2;
+    return result;
+  }
+  const return_val = sentence("r","l","c","u","e"/* fill this in */);
+  console.assert(return_val === 'cruel ulcer', "5: return_val === " + return_val);
+  ```
 
 ### 6
 
